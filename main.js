@@ -34,7 +34,9 @@ const createWindow = () => {
   //mainWindow.loadFile('http://localhost:3000')
 
   // Open the DevTools.
-  mainWindow.webContents.openDevTools();
+  // mainWindow.webContents.openDevTools();
+
+  mainWindow.webContents.setFrameRate(60)
 
   // let count = 0;
   // const timer = setInterval(() => {
