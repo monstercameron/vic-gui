@@ -1,0 +1,21 @@
+{
+  "shortcuts": [
+    { "name": "browser", "link": "Microsoft Edge" },
+    { "name": "calculator", "link": "Calculator" },
+    { "name": "calendar", "link": "Calendar" },
+    { "name": "camera", "link": "Camera" },
+    { "name": "mail", "link": "Mail" },
+    { "name": "maps", "link": "Maps" },
+    { "name": "phone", "link": "Your Phone" },
+    { "name": "photos", "link": "Photos" },
+    { "name": "paint", "link": "Paint" },
+    { "name": "spotify", "link": "Spotify" },
+    { "name": "voiceRecorder", "link": "Voice Recorder" }
+  ],
+  "exclude": [
+    "Microsoft Text Input Application",
+    "Cortana",
+    "Settings",
+    "Paint 3D"
+  ]
+}

@@ -2,22 +2,39 @@
   "name": "vic-gui",
   "version": "0.1.0",
   "private": true,
+  "main": "main.js",
+  "homepage": "./",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.0",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
     "axios": "^0.24.0",
+    "concurrently": "^6.4.0",
+    "d3-color": "^1.4.1",
+    "d3-interpolate": "^1.4.0",
+    "electron": "^16.0.4",
+    "elgato-stream-deck": "^4.1.0",
+    "node-cmd": "^5.0.0",
+    "npm": "^8.3.0",
+    "obd2-over-serial": "^0.3.0",
     "react": "^17.0.2",
     "react-dom": "^17.0.2",
+    "react-liquid-gauge": "^1.2.4",
     "react-router-dom": "^6.0.2",
     "react-scripts": "4.0.3",
-    "web-vitals": "^1.1.2"
+    "tasklist": "^5.0.0",
+    "wait-on": "^6.0.0",
+    "web-vitals": "^1.1.2",
+    "win-control": "^0.3.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "electron": " electron .",
+    "electron2": "wait-on tcp:3000 && electron .",
+    "dev": "concurrently --kill-others \"npm run start\" \"npm run electron2\""
   },
   "eslintConfig": {
     "extends": [
@@ -36,5 +53,11 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "electron-rebuild": "^3.2.5"
+  },
+  "optionalDependencies": {
+    "fsevents": "^2.3.2"
   }
 }

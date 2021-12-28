@@ -1,10 +1,13 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import App from './App';
+import React from "react";
+import ReactDOM from "react-dom";
+import App from "./App";
+import { injectContext } from "./store/store";
+
+const MyApp = injectContext(App);
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <MyApp />
   </React.StrictMode>,
-  document.getElementById('root')
+  document.getElementById("root")
 );
